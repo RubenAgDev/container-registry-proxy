@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "container-registry-proxy"
+version = "0.1.0"
+description = ""
+authors = ["Ruben Aguilar"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.65.2"
+uvicorn = {extras = ["standard"], version = "^0.14.0"}
+gunicorn = "^20.1.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "*"
+pre-commit = "*"
+black = "==19.10b0"
+bandit = "*"
+ipython = "*"
+ipdb = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
